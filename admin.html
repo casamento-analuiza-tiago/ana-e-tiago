@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Área dos Noivos</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="admin-page">
+
+        <section class="admin-card">
+
+            <h1>Área dos Noivos</h1>
+
+            <p>
+                Entre com sua conta para visualizar as confirmações de presença.
+            </p>
+
+            <form id="loginForm">
+
+                <label>
+                    E-mail
+                    <input type="email" id="email" required autocomplete="email">
+                </label>
+
+                <label>
+                    Senha
+                    <input type="password" id="password" required autocomplete="current-password">
+                </label>
+
+                <button class="button button-primary" type="submit">
+                    Entrar
+                </button>
+
+                <p id="loginStatus" class="form-status"></p>
+
+            </form>
+
+            <section id="rsvpSection" hidden>
+
+                <div class="admin-header">
+
+                    <div>
+                        <h2>Confirmações de presença</h2>
+                        <p id="rsvpStatus"></p>
+                    </div>
+
+                    <button type="button" class="button" id="logoutButton">
+                        Sair
+                    </button>
+
+                </div>
+
+                <div class="admin-stats">
+
+                    <div class="admin-stat">
+                        <span class="admin-stat-label">Respostas</span>
+                        <strong id="totalConfirmacoes">0</strong>
+                    </div>
+
+                    <div class="admin-stat">
+                        <span class="admin-stat-label">Irão ao casamento</span>
+                        <strong id="totalPresentes">0</strong>
+                    </div>
+
+                    <div class="admin-stat">
+                        <span class="admin-stat-label">Não irão</span>
+                        <strong id="totalAusentes">0</strong>
+                    </div>
+
+                    <div class="admin-stat">
+                        <span class="admin-stat-label">Acompanhantes</span>
+                        <strong id="totalAcompanhantes">0</strong>
+                    </div>
+
+                </div>
+
+                <div class="admin-filters">
+
+                    <input type="search" id="buscaConvidado" placeholder="Buscar convidado...">
+
+                    <select id="filtroPresenca">
+                        <option value="todos">Todos</option>
+                        <option value="presentes">Confirmaram presença</option>
+                        <option value="ausentes">Não irão</option>
+                    </select>
+
+                    <button type="button" class="button" id="exportarCsv">
+                        Exportar CSV
+                    </button>
+
+                </div>
+
+                <div id="rsvpList"></div>
+
+            </section>
+
+    </main>
+
+    <script type="module" src="admin.js"></script>
+
+</body>
+
+</html>

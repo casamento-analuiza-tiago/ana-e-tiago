@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4A5D3A">
+  <title>Ana Luiza &amp; Tiago | Nosso Casamento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <header class="hero botanical" id="inicio">
+    <nav class="nav container">
+      <a class="brand" href="#inicio">A &amp; T</a>
+      <div class="nav-links">
+        <a href="#nossa-historia">Recado</a>
+        <a href="#evento">O dia</a>
+        <a href="#presenca">Presença</a>
+        <a href="#presentes">Presentes</a>
+      </div>
+    </nav>
+    <div class="hero-content container">
+      <p class="eyebrow">Vamos comemorar nosso casamento</p>
+      <h1>Ana Luiza<br><em>&amp</em><br>Tiago</h1>
+      <p class="hero-subtitle">20 de novembro de 2026 · 19h · Rota 365, Lavras‑MG</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#presenca">Confirmar presença</a>
+      </div>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </header>
+
+  <main>
+    <section class="section story" id="nossa-historia">
+      <div class="container narrow">
+        <p class="eyebrow">Um recado nosso</p>
+        <h2>Um novo capítulo começa aqui</h2>
+        <!-- <p class="lead">Estamos muito felizes em celebrar o nosso casamento e queremos dividir esse dia com você. Mais do que uma festa, esse encontro representa o começo de uma nova fase das nossas vidas.</p> -->
+        <p class="message">
+          É com muito carinho que anunciamos o nosso casamento religioso, celebrado em uma cerimônia íntima e 
+          reservada aos nossos pais e irmãos. Ainda assim, não poderíamos deixar de comemorar  
+          esse momento tão especial com a nossa família e amigos, que fazem parte da nossa história 
+          e tornam a nossa caminhada ainda mais especial!
+          <br>
+          <br>
+          Ter sua presença na nossa recepção/chá de panelas é o que vai tornar esse momento ainda mais especial!
+           Sua companhia importa muito mais do que qualquer presente.
+          <br>
+          <br>
+          Se você quiser nos ajudar a começar essa nova fase, deixamos abaixo uma lista de presentes com sugestões.
+          Mas o convite mais importante é para estar com a gente nesse dia! ♡
+        </p>
+        <div class="signature">Com carinho,<br><strong>Ana Luiza &amp; Tiago</strong></div>
+      </div>
+    </section>
+
+    <section class="section botanical-soft" id="evento">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Anote na agenda</p>
+          <h2>Jantar comemorativo:</h2>
+          <p>O jantar será por adesão, 
+            em média <strong>R$ 60,00</strong> por pessoa.<br> 
+            Optamos por esse formato para que pudéssemos celebrar 
+            ao lado de vocês de uma maneira que fosse viável 
+            para nós, e a presença de cada um será muito especial!</p>
+        </div>
+        <div class="event-grid">
+          <article class="info-card"><span class="card-icon">♡</span>
+            <p class="card-label">Quando</p>
+            <h3>20 de novembro<br>de 2026</h3>
+          </article>
+          <article class="info-card"><span class="card-icon">◷</span>
+            <p class="card-label">Horário</p>
+            <h3>19h</h3>
+          </article>
+          <article class="info-card"><span class="card-icon">⚲</span>
+            <p class="card-label">Onde</p>
+            <h3>Rota 265</h3>
+            <p>Avenida Ernesto Matiolli, 1294<br>Santa Efigênia · Lavras/MG</p><a class="text-link" target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=Rota+265%2C+Avenida+Ernesto+Matiolli%2C+1294%2C+Santa+Efig%C3%AAnia%2C+Lavras%2C+MG">Ver
+              no mapa →</a>
+          </article>
+        </div>
+        <div class="countdown" aria-label="Contagem regressiva para o casamento">
+          <div><strong id="days">--</strong><span>dias</span></div>
+          <div><strong id="hours">--</strong><span>horas</span></div>
+          <div><strong id="minutes">--</strong><span>minutos</span></div>
+          <div><strong id="seconds">--</strong><span>segundos</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="presenca">
+      <div class="container rsvp-layout">
+        <div class="rsvp-copy">
+          <p class="eyebrow">Sua presença</p>
+          <h2>Você vem celebrar com a gente?</h2>
+          <p>Para organizarmos tudo com carinho, pedimos que confirme sua presença e conte quem estará acompanhando
+            você.</p>
+        </div>
+        <form class="rsvp-form" id="rsvpForm">
+          <label>
+            Seu nome
+            <input type="text" name="nome" placeholder="Nome completo" required>
+          </label>
+
+          <label>
+            Você poderá comparecer?
+            <select name="presenca" required>
+              <option value="">Selecione</option>
+              <option value="Sim, estarei presente!">
+                Sim, estarei presente!
+              </option>
+              <option value="Infelizmente não poderei comparecer">
+                Infelizmente não poderei comparecer
+              </option>
+            </select>
+          </label>
+          <div id="acompanhantesContainer" hidden>
+            <label>
+              Quantas pessoas irão com você?
+              <select name="acompanhantes" required>
+                <option value="0">Somente eu</option>
+                <option value="1">+ 1 pessoa</option>
+                <option value="2">+ 2 pessoas</option>
+                <option value="3">+ 3 pessoas</option>
+                <option value="4">+ 4 pessoas</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="nomesAcompanhantesContainer" hidden>
+            <label>
+              Nomes dos acompanhantes
+              <input type="text" name="nomes_acompanhantes" placeholder="Nome dos acompanhantes" required>
+            </label>
+          </div>
+
+          <label>
+            Mensagem para os noivos
+            <textarea name="mensagem" rows="4" placeholder="Deixe uma mensagem para nós..."></textarea>
+          </label>
+
+          <button class="button button-primary" type="submit">
+            Enviar confirmação
+          </button>
+
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section gifts-section botanical-soft" id="presentes">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Uma ajudinha para a nova fase</p>
+          <h2>Lista de presentes</h2>
+          <p class="section-intro">Sua presença já significa muito para nós. Se quiser nos presentear, escolha um dos
+            itens abaixo:</p>
+        </div>
+        <div class="gift-toolbar">
+          <label class="search-box"><span>⌕</span><input id="giftSearch" type="search"
+              placeholder="Pesquisar presente..."></label>
+          <span class="gift-counter" id="giftCounter"></span>
+        </div>
+        <div class="gift-grid" id="giftGrid"></div>
+        <div class="gift-empty" id="giftEmpty" hidden>Nenhum presente encontrado.</div>
+        <p class="gift-note">Os presentes são pagos por PIX.</p>
+      </div>
+    </section>
+
+    <section class="final-section botanical">
+      <div class="container">
+        <div class="final-flower">✽</div>
+        <p class="eyebrow">Esperamos você</p>
+        <h2>Até lá!</h2>
+        <p>Será muito especial ter você ao nosso lado nesse dia.</p>
+        <a class="button button-outline" href="#presenca">Confirmar presença</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com amor · Tiago &amp; Ana Luiza · 2026</p>
+  </footer>
+
+  <div class="modal-backdrop" id="giftModal" aria-hidden="true">
+    <div class="gift-modal" role="dialog" aria-modal="true" aria-labelledby="modalGiftName">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      <div class="modal-content">
+        <p class="eyebrow">Um presente para a nossa nova fase</p>
+        <h2 id="modalGiftName">Presente</h2>
+        <p id="modalGiftDescription" class="modal-description"></p>
+        <div class="pix-box">
+          <div class="qr-placeholder" id="pixQr">QR</div>
+          <p class="pix-label">
+            <strong>Dados da transferência:<br></strong>
+            Nome: Tiago Silva Oliveira<br>
+            CPF: ***.888.856-**<br>
+            Instituição: Itaú Unibanco S.A<br>
+          </p>
+          <button class="copy-pix" id="copyPix">Copiar código PIX</button>
+          <p class="copy-status" id="copyStatus"></p>
+        </div>
+        <div class="modal-confirm">
+          <p>Depois de realizar o pagamento, confirme abaixo para que este item seja marcado como presenteado.</p>
+          <button class="button button-primary" id="confirmGift">Já presenteei este item</button>
+          <p class="modal-status" id="modalStatus"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
