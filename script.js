@@ -390,9 +390,6 @@ async function init() {
   try {
     const userCredential = await signInAnonymously(auth);
 
-    console.log("Firebase conectado!");
-    console.log("Usuário anônimo:", userCredential.user.uid);
-
     await loadClaimedGifts();
 
   } catch (error) {
