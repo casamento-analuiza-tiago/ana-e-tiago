@@ -143,6 +143,7 @@ const giftImages = {
   "vale-presente-80": "https://classic.exame.com/wp-content/uploads/2016/09/size_960_16_9_caixa-de-presente-com-laco-vermelho3.jpg?auto=format&fit=crop&q=80&w=900",
   "vale-presente-100": "https://classic.exame.com/wp-content/uploads/2016/09/size_960_16_9_caixa-de-presente-com-laco-vermelho3.jpg?auto=format&fit=crop&q=80&w=900",
   "vale-presente-150": "https://classic.exame.com/wp-content/uploads/2016/09/size_960_16_9_caixa-de-presente-com-laco-vermelho3.jpg?auto=format&fit=crop&q=80&w=900",
+  "vale-presente-150-2": "https://classic.exame.com/wp-content/uploads/2016/09/size_960_16_9_caixa-de-presente-com-laco-vermelho3.jpg?auto=format&fit=crop&q=80&w=900",
   "vale-presente-200": "https://classic.exame.com/wp-content/uploads/2016/09/size_960_16_9_caixa-de-presente-com-laco-vermelho3.jpg?auto=format&fit=crop&q=80&w=900",
   "kit-ferramentas": "https://delupo.vtexassets.com/arquivos/ids/230496/86161_03.jpg?v=638688473298400000?auto=format&fit=crop&q=80&w=900",
   "netflix": "https://www.claro.com.br/files/104379/760x520/fe09a1c470/banner-blog-mobile-tv-melhores-filmes-para-assistir-na-netflix.png?auto=format&fit=crop&q=80&w=900",
