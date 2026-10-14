@@ -98,7 +98,7 @@ const gifts = [
   ["jogo-americano", "Jogo americano", "R$124,00"],
   ["sanduicheira", "Sanduicheira", "R$163,00"],
   ["pote-hermetico-1", "Pote hermético", "R$129,90"],
-  ["vale-presente-150", "Vale-presente", "R$150,00"],
+  ["vale-presente-150-2", "Vale-presente", "R$150,00"],
   ["netflix", "Cota Netflix", "R$130,00"],
   ["kit-utensilios", "Kit utensílios de cozinha", "R$142,87"],
   ["espelho-banheiro", "Espelho para o banheiro", "R$147,00"],
